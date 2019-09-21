@@ -1,4 +1,5 @@
 import 'package:projetoexemplo/src/carrinhoCompras.dart';
+import 'package:projetoexemplo/src/gato.dart';
 import 'package:projetoexemplo/src/imc.dart';
 import 'package:projetoexemplo/src/pessoa.dart';
 
@@ -10,6 +11,7 @@ main(List<String> arguments) {
   print(pessoa.nome);
   print(pessoa.idade);
   print(pessoa.sexo);
+  print(pessoa.peso);
 
   pessoa.imprimirLocal();
 
@@ -17,4 +19,9 @@ main(List<String> arguments) {
   print(pessoa.nomeLocal);
     // imc();
     // carrinhoCompras();
+
+    print("Criando um animal");
+    var gato = Gato(nome: "SAFADAO", barulho: "Miau");
+    print("Gato ${gato.nome} faz: ${gato.barulho}");
 }
+
